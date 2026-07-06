@@ -1,0 +1,21 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "main",
+    "origin",
+    "polylane/autofix/3ms3up050ldo",
+    "rescue/c291343"
+  ],
+  "parent": {
+    "main": null,
+    "origin": "main",
+    "polylane/autofix/3ms3up050ldo": "main",
+    "rescue/c291343": "main"
+  },
+  "order": [
+    "main",
+    "origin",
+    "polylane/autofix/3ms3up050ldo",
+    "rescue/c291343"
+  ]
+}
