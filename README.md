@@ -1,6 +1,6 @@
 # Loveworld Consular
 
-Public website for **The Office of the Loveworld Consular** — Loveworld Incorporated's
+Public website for **The Office of the Loveworld Consular**, Loveworld Incorporated's
 global-first consular network (South Africa, Malaysia, and beyond).
 
 ## Stack
@@ -21,7 +21,7 @@ pnpm lint     # lint
 
 ## Structure
 
-- `app/` — routes, root layout, and global styles. `app/globals.css` holds the shadcn
-  theme tokens (`:root` / `.dark`) — treat it as the source of truth for design tokens.
-- `components/ui/` — shadcn components.
-- `lib/utils.ts` — the `cn` class-merge helper.
+- `app/`: routes, root layout, and global styles. `app/globals.css` holds the shadcn
+  theme tokens (`:root` / `.dark`). Treat it as the source of truth for design tokens.
+- `components/ui/`: shadcn components.
+- `lib/utils.ts`: the `cn` class-merge helper.
