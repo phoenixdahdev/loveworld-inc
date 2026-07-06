@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Figtree, Space_Grotesk, Outfit } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { Provider } from "./provider";
 
 const figtree = Figtree({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
     template: "%s · Loveworld Consular",
   },
   description:
-    "The Office of the Loveworld Consular — establishing resident authority and commercial presence across South Africa, Malaysia, and every territory of operation.",
+    "The Office of the Loveworld Consular, establishing resident authority and commercial presence across South Africa, Malaysia, and every territory of operation.",
   applicationName: "Loveworld Consular",
 };
 
@@ -37,7 +38,9 @@ export default function RootLayout({
         figtree.variable,
       )}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Provider>{children}</Provider>
+      </body>
     </html>
   );
 }
